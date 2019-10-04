@@ -709,7 +709,7 @@ public class XpTrackerPlugin extends Plugin
 		}
 	}
 
-	private boolean hasOverlay(final Skill skill)
+	boolean hasOverlay(final Skill skill)
 	{
 		return overlayManager.anyMatch(o -> o instanceof XpInfoBoxOverlay && ((XpInfoBoxOverlay) o).getSkill() == skill);
 	}
